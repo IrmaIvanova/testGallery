@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Перейдите в папку проекта
 ### `cd testGallery` 
 
-## инсталируйте необходимые модули
+инсталируйте необходимые модули
 
 ### `npm i`
 или
