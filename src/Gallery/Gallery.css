@@ -1,0 +1,152 @@
+body { margin: 0; background: #333; }
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:100%;
+}
+.Container { 
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+  transition: 1s;
+  justify-content: center;
+  width:80%;
+}
+
+.DownloadButton{
+    position: relative;
+    margin: 50px 0 0;
+}
+.img-responsive { 
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto; 
+    width: 400px; 
+    height:300px;
+    margin: .5vw; 
+    display:block;
+    position: relative;
+    text-align: center;
+  }
+  .img-responsive img { 
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    object-fit: cover;
+    
+  }
+  .img-responsive::before {
+    content: ''; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; /* Вся ширина блока */
+    top:0; bottom: 0; /* Положение снизу */
+    background: #00000036; /* Цвет фона */
+    font-size: 11px; /* Размер текста */
+    padding: 5px; /* Поля вокруг текста */
+    text-align: center; /* Выравниваем текст по центру */
+    transition: 0.5s; /* Время анимации */
+   }
+
+  .name-txt {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 10px 10px 16px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.range-txt-name {
+    position: absolute;
+    color: #fff;
+    top:70px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.range-txt-desc {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.position-rage-bottom {
+    padding-bottom: 20px;
+}
+
+button {
+    opacity: 1;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    bottom: 50px;
+    background: #026aeb73;
+    color:#fff;
+    transition: opacity .3s;
+}
+.HoverBox{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #00000073; 
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.img-responsive:hover div.HoverBox{
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+
+/* .img-responsive:hover button,
+.img-responsive:hover  .range-txt{
+    opacity: 1;
+    transition: opacity .3s;
+} */
+.img-responsive:hover .name-txt{
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.img-responsive:hover::before {
+    content: ''; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; /* Вся ширина блока */
+    top:0; bottom: 0; /* Положение снизу */
+    background: #00000073; /* Цвет фона */
+    font-size: 11px; /* Размер текста */
+    padding: 5px; /* Поля вокруг текста */
+    text-align: center; /* Выравниваем текст по центру */
+    transition: 0.5s; /* Время анимации */
+   }
+
+@media screen and (max-width: 400px) {
+  header div { margin: 0; }
+  header { padding: 0; }
+  
+}
