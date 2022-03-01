@@ -165,4 +165,14 @@ a.button:hover {
 .button:hover::after {
     top: 0;
 }
-
+.InputWithMask{
+    width:100%;
+}
+.MuiPhoneNumber-flagButton svg{
+    width:30px;
+    height:auto;
+}
+.MuiPhoneNumber-flagButton{
+    width:40px;
+    top:0;
+}
